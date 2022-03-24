@@ -44,10 +44,25 @@ a:hover {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
+/* DESKTOP SCREEN */
+/* Assign a default amount of space for all list items so they all take up the same amount */
+li {
+  width: 100%;
+}
+
+/* Assign a smaller amount of space specifically for the social media icons */
+/* 25% means that each non-social list item gets 4 times as much space as each list item with class = social */
+.social {
+  width: 25%;
+}
+
+/* SMALLER SCREEN */
 @media all and (max-width: 1000px) {
 }
 
+/* SMALLEST SCREEN */
 @media all and (max-width: 500px) {
 }
