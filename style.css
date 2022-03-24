@@ -61,6 +61,16 @@ li {
 
 /* SMALLER SCREEN */
 @media all and (max-width: 1000px) {
+  /* Set the flex container to wrap, so that if items drop to the next row if they exceed the container width */
+  .flex-nav ul {
+    flex-wrap: wrap;
+  }
+
+  /* Set the default width for all list items to 50%, so that two will fit on each row */
+  /* Any list items with the class "social" will still have a width = 25% */
+  li {
+    width: 50%;
+  }
 }
 
 /* SMALLEST SCREEN */
