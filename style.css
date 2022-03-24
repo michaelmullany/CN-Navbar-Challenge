@@ -75,4 +75,10 @@ li {
 
 /* SMALLEST SCREEN */
 @media all and (max-width: 500px) {
+  /* Set the default width for all list items to 100%, so that only one fits on each row */
+  /* Because flex-wrap is now set to wrap (because the screen size is less than 1000px), the items stack, unlike in the desktop display when there is no wrap */
+  /* Any list items with the class "social" will still have a width = 25% */
+  li {
+    width: 100%;
+  }
 }
